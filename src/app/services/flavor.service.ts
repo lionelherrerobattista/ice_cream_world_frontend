@@ -13,4 +13,12 @@ export class FlavorService {
     return this.http.get<Flavor[]>(this.baseUrl);
   }
 
+  getFlavor(id: number) {
+    return this.http.get<Flavor>(`${this.baseUrl}/${id}`);
+  }
+
+  createFlavor(newFlavor: Flavor) {
+    return this.http.post(this.baseUrl, newFlavor);
+  }
+
 }

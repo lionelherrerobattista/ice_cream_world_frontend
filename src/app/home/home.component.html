@@ -1,10 +1,9 @@
-<!-- header -->
-<!-- sidenav -->
 <!-- mainpage -->
-<h1>Ice Cream World</h1>
-<h2>Menu</h2>
-<p>Choose your ice cream flavor:</p>
 
+<h2>Menu</h2>
+
+<!-- show ice cream flavors -->
+<p>Available ice cream flavors:</p>
 <ul>
   @for(flavor of flavors | async; track flavor.id) {
   <li>{{ flavor.name }} - {{ flavor.description }}</li>
