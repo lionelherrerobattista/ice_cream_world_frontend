@@ -1,9 +1,9 @@
-import { HttpClient } from '@angular/common/http';
-import { inject, Injectable } from '@angular/core';
-import { Flavor } from '../models/Flavor';
+import { HttpClient } from "@angular/common/http";
+import { inject, Injectable } from "@angular/core";
+import { Flavor } from "../models/Flavor";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class FlavorService {
   private http = inject(HttpClient);
@@ -18,7 +18,6 @@ export class FlavorService {
   }
 
   createFlavor(newFlavor: Flavor) {
-    return this.http.post(this.baseUrl, newFlavor);
+    return this.http.post<Flavor>(this.baseUrl, newFlavor);
   }
-
 }
