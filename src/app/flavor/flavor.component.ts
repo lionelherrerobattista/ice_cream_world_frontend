@@ -1,5 +1,5 @@
 import { Component, inject, OnInit } from "@angular/core";
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute, Router } from "@angular/router";
 import { FlavorService } from "../services/flavor.service";
 import { Flavor } from "../models/Flavor";
 import { TitleCasePipe } from "@angular/common";
@@ -15,6 +15,7 @@ export class FlavorComponent implements OnInit {
   flavor: Flavor | null = null;
   private activatedRoute = inject(ActivatedRoute);
   private flavorService = inject(FlavorService);
+  private router = inject(Router);
 
   constructor() {
     // get id from route
@@ -29,5 +30,9 @@ export class FlavorComponent implements OnInit {
       // show details in view
       this.flavor = res;
     });
+  }
+
+  onEditClick() {
+    this.router.navigate(["edit"], { relativeTo: this.activatedRoute });
   }
 }

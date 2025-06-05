@@ -1,1 +1,15 @@
-<p>edit-flavor works!</p>
+<form [formGroup]="editFlavorForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">Name:</label>
+    <input id="name" type="text" formControlName="flavorName" />
+  </div>
+  <div>
+    <label for="description">Description:</label>
+    <input id="description" type="text" formControlName="flavorDescription" />
+  </div>
+  <div>
+    <label for="photo">Photo:</label>
+    <input id="photo" type="text" formControlName="flavorPhoto" />
+  </div>
+  <button type="submit" [disabled]="!editFlavorForm.valid">Save Flavor</button>
+</form>

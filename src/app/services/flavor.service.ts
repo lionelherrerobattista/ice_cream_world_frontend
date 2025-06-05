@@ -20,4 +20,8 @@ export class FlavorService {
   createFlavor(newFlavor: Flavor) {
     return this.http.post<Flavor>(this.baseUrl, newFlavor);
   }
+
+  editFlavor(editedFlavor: Flavor) {
+    return this.http.put(`${this.baseUrl}/${editedFlavor.id}`, editedFlavor);
+  }
 }

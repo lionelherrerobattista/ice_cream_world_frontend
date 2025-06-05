@@ -21,16 +21,16 @@ export class NewFlavorComponent {
   newFlavorForm = new FormGroup({
     flavorName: new FormControl("", Validators.required),
     flavorDescription: new FormControl(""),
-    flavorImage: new FormControl(""),
+    flavorPhoto: new FormControl(""),
   });
 
   onSubmit() {
-    const { flavorName, flavorDescription, flavorImage } =
+    const { flavorName, flavorDescription, flavorPhoto } =
       this.newFlavorForm.value;
     const newFlavor: Flavor = {
       name: flavorName || "",
       description: flavorDescription || "",
-      photo: flavorImage || "",
+      photo: flavorPhoto || "",
     };
 
     // send data to backend

@@ -7,6 +7,7 @@
     src="{{ flavor.photo }}"
     alt="{{ flavor.name }} image"
   />
+  <button (click)="onEditClick()">Edit Flavor</button>
 } @else {
   <p>Fetching flavor...</p>
 }

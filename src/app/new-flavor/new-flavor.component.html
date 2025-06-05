@@ -1,4 +1,3 @@
-<!-- create for to add new flavor -->
 <form [formGroup]="newFlavorForm" (ngSubmit)="onSubmit()">
   <div>
     <label for="name">Name:</label>
@@ -9,9 +8,8 @@
     <input id="description" type="text" formControlName="flavorDescription" />
   </div>
   <div>
-    <label for="image">Image:</label>
-    <input id="image" type="text" formControlName="flavorImage" />
+    <label for="photo">Photo:</label>
+    <input id="photo" type="text" formControlName="flavorPhoto" />
   </div>
   <button type="submit" [disabled]="!newFlavorForm.valid">Save Flavor</button>
 </form>
-<p>{{ newFlavorForm.status }}</p>
