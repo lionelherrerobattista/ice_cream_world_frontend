@@ -4,11 +4,4 @@
 
 <!-- show ice cream flavors -->
 <p>Available ice cream flavors:</p>
-<ul>
-  @for(flavor of flavors | async; track flavor.id) {
-  <li>{{ flavor.name }} - {{ flavor.description }}</li>
-  } @empty {
-  <li>No flavors available at the moment.</li>
-  }
-  <!-- load menu here -->
-</ul>
+<app-flavor-list />

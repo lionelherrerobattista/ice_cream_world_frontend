@@ -1,1 +1,12 @@
-<p>flavor works!</p>
+@if (flavor) {
+  <h1>{{ flavor.name | titlecase }}</h1>
+  <h2>Description:</h2>
+  <p>{{ flavor.description }}</p>
+  <img
+    class="responsive"
+    src="{{ flavor.photo }}"
+    alt="{{ flavor.name }} image"
+  />
+} @else {
+  <p>Fetching flavor...</p>
+}

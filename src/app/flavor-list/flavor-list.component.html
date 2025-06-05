@@ -1,0 +1,10 @@
+<ul>
+  @for (flavor of flavors | async; track flavor.id) {
+    <li>
+      <a [routerLink]="['/flavor', flavor.id]">{{ flavor.name }}</a>
+    </li>
+  } @empty {
+    <li>No flavors available at the moment.</li>
+  }
+  <!-- load menu here -->
+</ul>
