@@ -1,13 +1,22 @@
-@if (flavor) {
-  <h1>{{ flavor.name | titlecase }}</h1>
-  <h2>Description:</h2>
-  <p>{{ flavor.description }}</p>
-  <img
-    class="responsive"
-    src="{{ flavor.photo }}"
-    alt="{{ flavor.name }} image"
-  />
-  <button (click)="onEditClick()">Edit Flavor</button>
-} @else {
-  <p>Fetching flavor...</p>
-}
+<div class="container">
+  @if (flavor) {
+    <h1>{{ flavor.name | titlecase }}</h1>
+    <h2>Description:</h2>
+    <p>{{ flavor.description }}</p>
+    <img
+      class="responsive"
+      src="{{ flavor.photo }}"
+      alt="{{ flavor.name }} image"
+    />
+    <div class="button-container">
+      <button class="btn btn-primary" (click)="onEditClick()">
+        Edit Flavor
+      </button>
+      <button class="btn btn-danger" (click)="onDeleteClick()">
+        Delete Flavor
+      </button>
+    </div>
+  } @else {
+    <p>Fetching flavor...</p>
+  }
+</div>

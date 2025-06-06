@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { Component } from "@angular/core";
+import { RouterOutlet } from "@angular/router";
+import { NavBarComponent } from "./nav-bar/nav-bar.component";
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet, RouterLink],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  selector: "app-root",
+  imports: [RouterOutlet, NavBarComponent],
+  templateUrl: "./app.component.html",
+  styleUrl: "./app.component.css",
 })
 export class AppComponent {
-  title = 'ice-cream-world';
+  title = "ice-cream-world";
 }

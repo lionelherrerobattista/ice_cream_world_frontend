@@ -26,7 +26,7 @@ export class FlavorComponent implements OnInit {
 
   ngOnInit(): void {
     // get flavor's info from backend
-    this.flavorService.getFlavor(Number(this.flavorId)).subscribe((res) => {
+    this.flavorService.getFlavor(this.flavorId).subscribe((res) => {
       // show details in view
       this.flavor = res;
     });
@@ -34,5 +34,14 @@ export class FlavorComponent implements OnInit {
 
   onEditClick() {
     this.router.navigate(["edit"], { relativeTo: this.activatedRoute });
+  }
+
+  onDeleteClick() {
+    // TODO: add admin check
+    this.flavorService.deleteFlavor(this.flavorId).subscribe((res) => {
+      console.log(res);
+
+      this.router.navigate(["/home"]);
+    });
   }
 }

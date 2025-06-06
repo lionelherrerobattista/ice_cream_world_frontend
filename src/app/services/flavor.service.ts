@@ -13,7 +13,7 @@ export class FlavorService {
     return this.http.get<Flavor[]>(this.baseUrl);
   }
 
-  getFlavor(id: number) {
+  getFlavor(id: string) {
     return this.http.get<Flavor>(`${this.baseUrl}/${id}`);
   }
 
@@ -23,5 +23,9 @@ export class FlavorService {
 
   editFlavor(editedFlavor: Flavor) {
     return this.http.put(`${this.baseUrl}/${editedFlavor.id}`, editedFlavor);
+  }
+
+  deleteFlavor(id: string) {
+    return this.http.delete(`${this.baseUrl}/${id}`);
   }
 }

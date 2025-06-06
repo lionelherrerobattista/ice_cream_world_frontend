@@ -35,7 +35,7 @@ export class EditFlavorComponent implements OnInit {
 
   ngOnInit(): void {
     // load flavor
-    this.flavorService.getFlavor(Number(this.flavorId)).subscribe((flavor) => {
+    this.flavorService.getFlavor(this.flavorId).subscribe((flavor) => {
       // set values in the form
       this.editFlavorForm.setValue({
         flavorName: flavor.name,
@@ -50,7 +50,7 @@ export class EditFlavorComponent implements OnInit {
       this.editFlavorForm.value;
 
     const editedFlavor: Flavor = {
-      id: Number(this.flavorId),
+      id: this.flavorId,
       name: flavorName || "",
       description: flavorDescription || "",
       photo: flavorPhoto || "",

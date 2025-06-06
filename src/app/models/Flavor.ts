@@ -1,6 +1,6 @@
 export interface Flavor {
-    id?: number;
-    name: string;
-    description?: string;
-    photo?: string;
+  id?: string;
+  name: string;
+  description?: string;
+  photo?: string;
 }
