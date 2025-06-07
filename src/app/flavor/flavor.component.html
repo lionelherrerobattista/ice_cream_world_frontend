@@ -1,0 +1,21 @@
+<div class="container">
+  @if (flavor) {
+    <h1>{{ flavor.name | titlecase }}</h1>
+    <div class="details-container">
+      <p>{{ flavor.description }}</p>
+      <div class="image-wrapper">
+        <img src="{{ flavor.photo }}" alt="{{ flavor.name }} image" />
+      </div>
+    </div>
+    <div class="button-container">
+      <button class="btn btn-primary" (click)="onEditClick()">
+        Edit Flavor
+      </button>
+      <button class="btn btn-danger" (click)="onDeleteClick()">
+        Delete Flavor
+      </button>
+    </div>
+  } @else {
+    <p>Fetching flavor...</p>
+  }
+</div>

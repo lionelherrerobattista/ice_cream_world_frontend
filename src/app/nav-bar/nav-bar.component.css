@@ -1,0 +1,20 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 3rem;
+  padding: 0 1.5rem;
+  min-height: 100%;
+  background-color: #ffffff;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+.logo {
+  /* flex-grow: 1; */
+  flex: 1 0 auto;
+  font-size: var(--text-size-xl);
+  font-weight: bold;
+}
