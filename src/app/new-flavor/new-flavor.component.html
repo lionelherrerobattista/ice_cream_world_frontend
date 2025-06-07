@@ -1,15 +1,43 @@
-<form [formGroup]="newFlavorForm" (ngSubmit)="onSubmit()">
-  <div>
-    <label for="name">Name:</label>
-    <input id="name" type="text" formControlName="flavorName" />
+<h1 class="page-title">Add a New Flavor</h1>
+<form
+  class="form-container"
+  [formGroup]="newFlavorForm"
+  (ngSubmit)="onSubmit()"
+>
+  <div class="input-container">
+    <label class="form-label" for="name">Name</label>
+    <input
+      class="form-input"
+      id="name"
+      type="text"
+      formControlName="flavorName"
+    />
   </div>
-  <div>
-    <label for="description">Description:</label>
-    <input id="description" type="text" formControlName="flavorDescription" />
+  <div class="input-container">
+    <label class="form-label" for="description">Description</label>
+    <textarea
+      class="form-textarea"
+      id="description"
+      type="text"
+      formControlName="flavorDescription"
+    ></textarea>
   </div>
-  <div>
-    <label for="photo">Photo:</label>
-    <input id="photo" type="text" formControlName="flavorPhoto" />
+  <div class="input-container">
+    <label class="form-label" for="photo">Photo</label>
+    <input
+      class="form-input"
+      id="photo"
+      type="text"
+      formControlName="flavorPhoto"
+    />
   </div>
-  <button type="submit" [disabled]="!newFlavorForm.valid">Save Flavor</button>
+  <div class="button-container">
+    <button
+      class="btn btn-primary"
+      type="submit"
+      [disabled]="!newFlavorForm.valid"
+    >
+      Save Flavor
+    </button>
+  </div>
 </form>

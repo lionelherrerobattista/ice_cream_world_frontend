@@ -1,15 +1,33 @@
-<form [formGroup]="editFlavorForm" (ngSubmit)="onSubmit()">
-  <div>
-    <label for="name">Name:</label>
+<h1 class="page-title">Edit Flavor</h1>
+
+<form
+  class="form-container"
+  [formGroup]="editFlavorForm"
+  (ngSubmit)="onSubmit()"
+>
+  <div class="input-container">
+    <label class="form-label" for="name">Name</label>
     <input id="name" type="text" formControlName="flavorName" />
   </div>
-  <div>
-    <label for="description">Description:</label>
-    <input id="description" type="text" formControlName="flavorDescription" />
+  <div class="input-container">
+    <label class="form-label" for="description">Description</label>
+    <textarea
+      id="description"
+      type="text"
+      formControlName="flavorDescription"
+    ></textarea>
   </div>
-  <div>
-    <label for="photo">Photo:</label>
+  <div class="input-container">
+    <label class="form-label" for="photo">Photo</label>
     <input id="photo" type="text" formControlName="flavorPhoto" />
   </div>
-  <button type="submit" [disabled]="!editFlavorForm.valid">Save Flavor</button>
+  <div class="button-container">
+    <button
+      class="btn btn-primary"
+      type="submit"
+      [disabled]="!editFlavorForm.valid"
+    >
+      Save Flavor
+    </button>
+  </div>
 </form>
