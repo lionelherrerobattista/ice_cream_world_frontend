@@ -1,13 +1,14 @@
 import { HttpClient } from "@angular/common/http";
 import { inject, Injectable } from "@angular/core";
 import { Flavor } from "../models/Flavor";
+import { environment } from "../../environments/environment";
 
 @Injectable({
   providedIn: "root",
 })
 export class FlavorService {
   private http = inject(HttpClient);
-  private baseUrl = "http://localhost:5299/api/flavor";
+  private baseUrl = environment.apiUrl + "/flavor";
 
   getFlavors() {
     return this.http.get<Flavor[]>(this.baseUrl);
