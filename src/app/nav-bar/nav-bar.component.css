@@ -8,10 +8,6 @@ nav {
   background-color: #ffffff;
 }
 
-nav a:hover {
-  text-decoration: none;
-}
-
 .logo {
   /* flex-grow: 1; */
   flex: 1 0 auto;

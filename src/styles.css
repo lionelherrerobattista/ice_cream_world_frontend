@@ -53,18 +53,23 @@ footer {
 
 h1 {
   font-size: var(--text-size-4xl);
+  color: #895501;
 }
 h2 {
   font-size: var(--text-size-3xl);
+  color: #895501;
 }
 h3 {
   font-size: var(--text-size-2xl);
+  color: #895501;
 }
 h4 {
   font-size: var(--text-size-xl);
+  color: #895501;
 }
 h5 {
   font-size: var(--text-size-lg);
+  color: #895501;
 }
 
 /* style links */
@@ -81,7 +86,6 @@ a:hover,
 a:active {
   color: #482d02;
   font-weight: bold;
-  text-decoration: underline dotted #482d02;
   cursor: pointer;
 }
 
