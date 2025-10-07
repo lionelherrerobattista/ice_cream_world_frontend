@@ -1,14 +1,18 @@
 # Ice Cream World Front-end
 
-This is the front-end for the Ice Cream World business. It displays the flavors that the business sells. The admin can add new flavors, edit or delete them.
+This is the front-end for the Ice Cream World business. It displays the flavors that the business will sell. The admin can add new flavors, edit or delete them.
 
 # Getting started
+
+1. Start app
 
 ```bash
 npm start
 ```
 
-## Run with backend in docker
+## Run with backend in Docker
+
+1. Run app with Docker
 
 ```bash
 npm run docker
@@ -45,11 +49,6 @@ Allows the user to edit the flavor details.
 Allows the user to add a new flavor.
 
 # Users actions in detail
-
-## Customer
-
-- The customer can see the flavors.
-- The customer can see the flavors details.
 
 ## Admin
 

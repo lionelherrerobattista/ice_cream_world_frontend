@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: "http://localhost:5299/api",
+  apiUrl: "https://ice-cream-world-backend.onrender.com",
 };
