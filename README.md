@@ -1,12 +1,30 @@
-# Ice Cream World Frontend
+# Ice Cream World Front-end
 
-This is the front-end for the Ice Cream World business. It displays the flavors and serving containers that the business sells.
+This is the front-end for the Ice Cream World business. It displays the flavors that the business will sell. The admin can add new flavors, edit or delete them.
 
-# How to run
+# Getting started
+
+1. Start app
 
 ```bash
 npm start
 ```
+
+## Run with backend in Docker
+
+1. Run app with Docker
+
+```bash
+npm run docker
+```
+
+# Technical Docs
+
+- Framework:
+
+  - Angular v20
+
+- [Backend repository](https://github.com/lionelherrerobattista/ice_cream_world_backend)
 
 # Components
 
@@ -21,3 +39,19 @@ Displays the flavors and serving cups.
 - `/flavor/:id`
 
 Displays the flavor details
+
+- `/flavor/:id/edit`
+
+Allows the user to edit the flavor details.
+
+- `/flavor/new`
+
+Allows the user to add a new flavor.
+
+# Users actions in detail
+
+## Admin
+
+- The admin user can add new flavors.
+- The admin user can edit the flavors.
+- The admin user can delete the flavors.
