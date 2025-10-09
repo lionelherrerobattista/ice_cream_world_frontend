@@ -8,7 +8,7 @@ import { TitleCasePipe } from "@angular/common";
   selector: "app-flavor",
   imports: [TitleCasePipe],
   templateUrl: "./flavor.component.html",
-  styleUrl: "./flavor.component.css",
+  styleUrl: "./flavor.component.scss",
 })
 export class FlavorComponent implements OnInit {
   flavorId = "";

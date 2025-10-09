@@ -13,7 +13,7 @@ import { Router } from "@angular/router";
   selector: "app-new-flavor",
   imports: [ReactiveFormsModule],
   templateUrl: "./new-flavor.component.html",
-  styleUrl: "./new-flavor.component.css",
+  styleUrl: "./new-flavor.component.scss",
 })
 export class NewFlavorComponent {
   private flavorService = inject(FlavorService);

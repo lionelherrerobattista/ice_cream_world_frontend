@@ -5,6 +5,6 @@ import { FlavorListComponent } from "../flavor-list/flavor-list.component";
   selector: "app-home",
   imports: [FlavorListComponent],
   templateUrl: "./home.component.html",
-  styleUrl: "./home.component.css",
+  styleUrl: "./home.component.scss",
 })
 export class HomeComponent {}

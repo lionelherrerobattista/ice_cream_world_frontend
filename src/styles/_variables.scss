@@ -1,0 +1,62 @@
+/* Colors */
+/* Primary brand color */
+$color-primary: #b45309;
+$color-on-primary: #ffffff;
+
+$color-accent: #0369a1; // complementary blue
+$color-on-accent: #ffffff;
+
+$color-surface: #ffffff;
+$color-on-surface: #292524; // warm gray-800
+$color-background: #fafaf9; // warm gray-50
+
+$color-error: #dc2626; // warm red
+$color-success: #15803d; // forest green
+$color-warn: #d97706; // amber
+
+/* Font families */
+$font-body: "Montserrat", sans-serif;
+
+/* Font sizes (Major Third scale) */
+$font-size-xxl: 3rem; /* 48px */
+$font-size-xl: 2.4rem; /* 38px */
+$font-size-lg: 1.8rem; /* 29px */
+$font-size-md: 1.44rem; /* 23px */
+$font-size-base: 1rem; /* 16px */
+$font-size-sm: 0.875rem; /* 14px */
+$font-size-xs: 0.75rem; /* 12px */
+
+// Font weights
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+// Spacing
+$space-xxs: 0.25rem; // 4px
+$space-xs: 0.5rem; // 8px
+$space-sm: 1rem; // 16px
+$space-md: 1.5rem; // 24px
+$space-lg: 2rem; // 32px
+$space-xl: 3rem; // 48px
+
+/* Line heights */
+$line-height-heading: 1.2;
+$line-height-body: 1.6;
+
+// borders
+$radius-sm: 0.25rem; // 4px
+$radius-md: 0.5rem; // 8px
+$radius-lg: 1rem; // 16px
+
+$border-width: 1px;
+$border-color: rgba(0, 0, 0, 0.1);
+
+// shadows
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.08);
+$shadow-md: 0 2px 4px rgba(0, 0, 0, 0.12);
+$shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.15);
+
+// transitions
+$transition-fast: 150ms ease-in-out;
+$transition-normal: 250ms ease;
+$transition-slow: 400ms ease;

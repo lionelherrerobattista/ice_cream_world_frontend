@@ -1,0 +1,27 @@
+@use "../../styles/variables" as v;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 6vh;
+  padding: 0 3rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.logo {
+  font-weight: v.$font-weight-bold;
+}
+
+.logo-link {
+  text-decoration: none;
+}

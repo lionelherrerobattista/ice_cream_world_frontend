@@ -1,4 +1,7 @@
-.menu-container {
+@use "../../styles/variables";
+@use "../../styles/layout";
+
+.page-container--flex {
   display: flex;
   flex-direction: column;
   gap: 2rem;
