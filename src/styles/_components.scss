@@ -1,0 +1,38 @@
+@use "./variables" as v;
+
+.form-input {
+  padding: v.$space-xs v.$space-sm;
+  border: v.$border-width solid v.$border-color;
+  border-radius: v.$radius-sm;
+}
+
+.form-textarea {
+  resize: none;
+  padding: v.$space-xs v.$space-sm;
+  border: v.$border-width solid v.$border-color;
+  border-radius: v.$radius-sm;
+}
+
+.btn {
+  color: var(--color-on-accent);
+  font-size: v.$font-size-base;
+  padding: v.$space-xs v.$space-sm;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color v.$transition-normal;
+
+  &-primary {
+    background-color: var(--color-primary);
+  }
+
+  &-danger {
+    background-color: var(--color-error);
+  }
+
+  &-cancel {
+    background-color: var(--color-background);
+    color: var(--color-on-surface);
+    border: v.$border-width solid v.$border-color;
+  }
+}

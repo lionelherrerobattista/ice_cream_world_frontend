@@ -1,4 +1,5 @@
 import { Component, inject, OnInit } from "@angular/core";
+import { Location } from "@angular/common";
 import { ActivatedRoute, Router } from "@angular/router";
 import { FlavorService } from "../services/flavor.service";
 import {
@@ -13,7 +14,7 @@ import { Flavor } from "../models/Flavor";
   selector: "app-edit-flavor",
   imports: [ReactiveFormsModule],
   templateUrl: "./edit-flavor.component.html",
-  styleUrl: "./edit-flavor.component.css",
+  styleUrl: "./edit-flavor.component.scss",
 })
 export class EditFlavorComponent implements OnInit {
   flavorId = "";
@@ -25,6 +26,7 @@ export class EditFlavorComponent implements OnInit {
   private activatedRoute = inject(ActivatedRoute);
   private router = inject(Router);
   private flavorService = inject(FlavorService);
+  private location = inject(Location);
 
   constructor() {
     // get id
@@ -61,5 +63,9 @@ export class EditFlavorComponent implements OnInit {
       // redirect to description page
       this.router.navigate([".."], { relativeTo: this.activatedRoute });
     });
+  }
+
+  onBackClick() {
+    this.location.back();
   }
 }

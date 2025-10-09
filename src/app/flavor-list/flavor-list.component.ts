@@ -9,7 +9,7 @@ import { RouterLink } from "@angular/router";
   selector: "app-flavor-list",
   imports: [AsyncPipe, RouterLink],
   templateUrl: "./flavor-list.component.html",
-  styleUrl: "./flavor-list.component.css",
+  styleUrl: "./flavor-list.component.scss",
 })
 export class FlavorListComponent {
   private flavorService = inject(FlavorService);
