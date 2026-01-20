@@ -4,12 +4,18 @@ import { NotFoundComponent } from "./not-found/not-found.component";
 import { NewFlavorComponent } from "./new-flavor/new-flavor.component";
 import { FlavorComponent } from "./flavor/flavor.component";
 import { EditFlavorComponent } from "./edit-flavor/edit-flavor.component";
+import { FlavorListComponent } from "./flavor-list/flavor-list.component";
 
 export const routes: Routes = [
   {
     path: "",
     component: HomeComponent,
     title: "Home Page",
+  },
+  {
+    path: "flavors",
+    component: FlavorListComponent,
+    title: "Flavors List",
   },
   {
     path: "flavor/new",

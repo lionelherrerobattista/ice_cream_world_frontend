@@ -1,6 +1,6 @@
 # Ice Cream World Front-end
 
-This is the front-end for the Ice Cream World business. It displays the flavors that the business will sell. The admin can add new flavors, edit or delete them.
+This is the front-end for the Ice Cream World business. It is a system for the employees to add new flavors, edit or delete them.
 
 # Getting started
 
@@ -48,10 +48,10 @@ Allows the user to edit the flavor details.
 
 Allows the user to add a new flavor.
 
-# Users actions in detail
+# User stories
 
-## Admin
-
-- The admin user can add new flavors.
-- The admin user can edit the flavors.
-- The admin user can delete the flavors.
+- UI
+  - [ ] Add SCSS styles.
+  - [ ] Add toast.
+  - [ ] Add error messages.
+  - [ ] Add favicon.

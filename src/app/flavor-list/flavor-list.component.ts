@@ -14,8 +14,4 @@ import { RouterLink } from "@angular/router";
 export class FlavorListComponent {
   private flavorService = inject(FlavorService);
   flavors!: Observable<Flavor[]>;
-
-  constructor() {
-    this.flavors = this.flavorService.getFlavors();
-  }
 }
