@@ -30,3 +30,16 @@ form {
   flex-direction: row;
   justify-content: flex-end;
 }
+
+.form-input {
+  padding: 0.5rem 1rem;
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--radius-sm);
+}
+
+.form-textarea {
+  resize: none;
+  padding: 0.5rem 1rem;
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--radius-sm);
+}

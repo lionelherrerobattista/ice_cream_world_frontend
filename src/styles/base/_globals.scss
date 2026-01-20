@@ -1,0 +1,48 @@
+body {
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-body);
+
+  color: var(--brand-primary);
+  background-color: var(--bg-page);
+}
+
+h1 {
+  font-size: var(--font-size-xxl);
+  line-height: var(--line-height-heading);
+  font-weight: var(--font-weight-bold);
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-heading);
+  font-weight: var(--font-weight-medium);
+}
+
+h3 {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-heading);
+  font-weight: var(--font-weight-medium);
+}
+
+h4 {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-heading);
+  font-weight: var(--font-weight-medium);
+}
+
+p {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-body);
+  max-width: 70ch;
+}
+
+a {
+  color: var(--brand-primary);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

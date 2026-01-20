@@ -1,0 +1,22 @@
+:root {
+  /* Font families */
+  --font-body: "Montserrat", sans-serif;
+
+  /* Font sizes (Major Third scale) */
+  --font-size-xxl: 3rem; /* 48px */
+  --font-size-xl: 2.4rem; /* 38px */
+  --font-size-lg: 1.8rem; /* 29px */
+  --font-size-md: 1.44rem; /* 23px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-xs: 0.75rem; /* 12px */
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Line heights */
+  --line-height-heading: 1.2;
+  --line-height-body: 1.6;
+}
