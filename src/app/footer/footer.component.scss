@@ -3,4 +3,9 @@
   justify-content: center;
   align-items: center;
   min-height: 8vh;
+  background-color: var(--brand-primary);
+}
+
+.footer__text {
+  color: var(--on-brand);
 }

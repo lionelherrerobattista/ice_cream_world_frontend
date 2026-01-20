@@ -12,4 +12,7 @@
 @use "./base/globals";
 @use "./base/forms";
 
+@use "./themes/light";
+@use "./themes/dark";
+
 @use "./components/button";

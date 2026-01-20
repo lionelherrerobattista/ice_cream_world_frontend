@@ -1,8 +1,17 @@
-.page-container--flex {
+:host {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  height: 100vh;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.home__title {
+  text-align: center;
+}
+
+.home__subtitle {
+  text-align: center;
+  font-size: var(--font-size-lg);
 }
 
 .title-container {
@@ -13,33 +22,25 @@
   }
 }
 
-.home-options-container {
-  flex: 1 1 auto; // occupy remaining space
-
-  // display: grid;
-  // grid-template-columns: repeat(2, 1fr);
-  // align-content: center;
-  // gap: 2rem;
-
+.icecream-world-logo {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 5rem;
 }
 
-.home-option {
+.icecream-world-logo img {
+  width: 100%;
+  height: auto;
+
+  max-width: 15rem;
+}
+
+.home__actions {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  gap: 0.5rem;
+}
 
-  border: var(--border-width) solid var(--borders-default);
-  background-color: var(--brand-primary);
-  color: var(--on-brand);
-  font-size: var(--font-size-xl);
-  text-decoration: none;
-
-  min-height: 15rem;
-  min-width: 25rem;
-  border-radius: 0.375rem;
+.home__action {
+  padding: 2rem;
 }
