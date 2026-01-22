@@ -1,27 +1,46 @@
-@use "../../styles/variables" as v;
+@use "../../styles/scss/mixins" as m;
+
+:host {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--brand-primary);
+}
 
 .header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  min-height: 6vh;
-  padding: 0 3rem;
+  padding: 1rem;
+
+  @include m.respond(lg) {
+    flex-direction: row;
+  }
 }
 
-.logo-container {
+.logo__link {
   display: flex;
   align-items: center;
-}
+  gap: 0.5rem;
 
-nav {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-}
-
-.logo {
-  font-weight: v.$font-weight-bold;
-}
-
-.logo-link {
   text-decoration: none;
+  font-weight: var(--font-weight-bold);
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo__icon {
+  fill: var(--on-brand);
+}
+
+.navigation__link {
+  padding: 0.5rem;
+}
+
+.navigation__link--active {
+  font-weight: var(--font-weight-bold);
 }

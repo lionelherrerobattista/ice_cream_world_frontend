@@ -1,0 +1,33 @@
+:root {
+  // text
+  --text-primary: var(--color-neutral-900);
+  --text-secondary: var(--color-neutral-700);
+  --text-muted: var(--color-neutral-400);
+  --text-disabled: var(--color-neutral-300);
+  --text-inverse: var(--color-white);
+
+  // text on colored surfaces
+  --on-brand: var(--color-on-primary);
+  --on-accent: var(--color-on-accent);
+  --on-success: var(--color-on-success);
+
+  // backgrounds
+  --bg-page: var(--color-white);
+  --bg-surface: var(--color-neutral-50);
+  --bg-elevated: var(--color-white);
+
+  // borders
+  --borders-subtle: var(--color-neutral-100);
+  --borders-default: var(--color-neutral-200);
+  --borders-strong: var(--color-neutral-300);
+
+  // brand
+  --brand-primary: var(--color-primary);
+  --brand-secondary: var(--color-accent);
+
+  // status
+  --status-error: var(--color-error);
+  --status-on-error: var(--color-on-error);
+  --status-success: var(--color-success);
+  --status-on-success: var(--color-on-success);
+}

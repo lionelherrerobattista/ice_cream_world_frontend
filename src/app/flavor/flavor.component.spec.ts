@@ -1,23 +1,22 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { FlavorComponent } from './flavor.component';
+import { FlavorComponent } from "./flavor.component";
 
-describe('FlavorComponent', () => {
+describe("FlavorComponent", () => {
   let component: FlavorComponent;
   let fixture: ComponentFixture<FlavorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FlavorComponent]
-    })
-    .compileComponents();
+      imports: [FlavorComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(FlavorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

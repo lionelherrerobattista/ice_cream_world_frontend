@@ -1,14 +1,55 @@
-@use "../../styles/variables";
-@use "../../styles/layout";
+@use "../../styles/scss/mixins" as m;
 
-.page-container--flex {
+:host {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
 }
 
-.list-container {
+.home__title {
+  text-align: center;
+}
+
+.home__subtitle {
+  text-align: center;
+  font-size: var(--font-size-lg);
+
+  @include m.respond(lg) {
+    margin-bottom: var(--space-lg);
+  }
+}
+
+.icecream-world-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.icecream-world-logo img {
+  width: 100%;
+  height: auto;
+
+  max-width: 14rem;
+
+  @include m.respond(lg) {
+    max-width: 25rem;
+  }
+}
+
+.home__actions {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+
+  @include m.respond(lg) {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+.home__action {
+  padding: 2rem;
 }

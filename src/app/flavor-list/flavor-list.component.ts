@@ -1,4 +1,4 @@
-import { Component, inject } from "@angular/core";
+import { Component, inject, OnInit } from "@angular/core";
 import { FlavorService } from "../services/flavor.service";
 import { Observable } from "rxjs";
 import { Flavor } from "../models/Flavor";
@@ -11,11 +11,11 @@ import { RouterLink } from "@angular/router";
   templateUrl: "./flavor-list.component.html",
   styleUrl: "./flavor-list.component.scss",
 })
-export class FlavorListComponent {
+export class FlavorListComponent implements OnInit {
   private flavorService = inject(FlavorService);
   flavors!: Observable<Flavor[]>;
 
-  constructor() {
+  ngOnInit(): void {
     this.flavors = this.flavorService.getFlavors();
   }
 }

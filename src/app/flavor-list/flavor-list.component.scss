@@ -1,8 +1,24 @@
-.container {
+:host {
+  display: flex; // or block, necessary for padding
+  flex-direction: column;
+
+  padding: 1rem;
+}
+
+.flavors-list__title {
+  text-align: center;
+}
+
+.flavors-list__elements {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  padding: 0 2rem;
+  align-items: center;
+}
+
+.flavor {
+  width: 100%;
+  max-width: 25rem;
+  margin-inline: auto;
 }
 
 .empty-list-text {
