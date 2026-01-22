@@ -55,6 +55,7 @@ Allows the user to add a new flavor.
   - [ ] Add toast.
   - [ ] Add error messages.
   - [ ] Add favicon.
+  - [ ] Improve image loading and layout wobbling
 - Flavor Component
   - [ ] Fix redirection when deleting element.
   - [ ] Add spinner when loading flavor.
