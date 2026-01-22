@@ -24,4 +24,10 @@
   // brand
   --brand-primary: var(--color-primary);
   --brand-secondary: var(--color-accent);
+
+  // status
+  --status-error: var(--color-error);
+  --status-on-error: var(--color-on-error);
+  --status-success: var(--color-success);
+  --status-on-success: var(--color-on-success);
 }

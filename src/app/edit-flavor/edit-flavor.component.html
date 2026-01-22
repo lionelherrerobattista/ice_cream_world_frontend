@@ -1,47 +1,41 @@
-<div class="page-container page-container--flex">
-  <h1 class="page-title">Edit Flavor</h1>
+<h1 class="flavor-form__title">Edit Flavor</h1>
 
-  <form
-    class="form-container"
-    [formGroup]="editFlavorForm"
-    (ngSubmit)="onSubmit()"
-  >
-    <div class="input-container">
-      <label class="form-label" for="name">Name</label>
-      <input
-        class="form-input"
-        id="name"
-        type="text"
-        formControlName="flavorName"
-      />
-    </div>
-    <div class="input-container">
-      <label class="form-label" for="description">Description</label>
-      <textarea
-        class="form-textarea"
-        id="description"
-        type="text"
-        formControlName="flavorDescription"
-      ></textarea>
-    </div>
-    <div class="input-container">
-      <label class="form-label" for="photo">Photo</label>
-      <input
-        class="form-input"
-        id="photo"
-        type="text"
-        formControlName="flavorPhoto"
-      />
-    </div>
-    <div class="button-container">
-      <button class="btn btn-cancel" (click)="onBackClick()">Back</button>
-      <button
-        class="btn btn-primary"
-        type="submit"
-        [disabled]="!editFlavorForm.valid"
-      >
-        Edit Flavor
-      </button>
-    </div>
-  </form>
-</div>
+<form class="flavor-form" [formGroup]="editFlavorForm" (ngSubmit)="onSubmit()">
+  <div class="form-field">
+    <label class="form-field__label" for="name">Name</label>
+    <input
+      class="form-field__input"
+      id="name"
+      type="text"
+      formControlName="flavorName"
+    />
+  </div>
+  <div class="form-field">
+    <label class="form-field__label" for="description">Description</label>
+    <textarea
+      class="form-field__textarea"
+      id="description"
+      type="text"
+      formControlName="flavorDescription"
+    ></textarea>
+  </div>
+  <div class="form-field">
+    <label class="form-field__label" for="photo">Photo</label>
+    <input
+      class="form-field__input"
+      id="photo"
+      type="text"
+      formControlName="flavorPhoto"
+    />
+  </div>
+  <div class="form__actions">
+    <button
+      class="btn btn-primary"
+      type="submit"
+      [disabled]="!editFlavorForm.valid"
+    >
+      Edit Flavor
+    </button>
+    <button class="btn btn--secondary" (click)="onBackClick()">Back</button>
+  </div>
+</form>

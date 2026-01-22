@@ -1,41 +1,39 @@
-<div class="page-container page-container--flex">
-  <h1 class="page-title">Add a New Flavor</h1>
-  <form [formGroup]="newFlavorForm" (ngSubmit)="onSubmit()">
-    <div class="input-container">
-      <label class="form-label" for="name">Name:</label>
-      <input
-        class="form-input"
-        id="name"
-        type="text"
-        formControlName="flavorName"
-      />
-    </div>
-    <div class="input-container">
-      <label class="form-label" for="description">Description:</label>
-      <textarea
-        class="form-textarea"
-        id="description"
-        type="text"
-        formControlName="flavorDescription"
-      ></textarea>
-    </div>
-    <div class="input-container">
-      <label class="form-label" for="photo">Photo:</label>
-      <input
-        class="form-input"
-        id="photo"
-        type="text"
-        formControlName="flavorPhoto"
-      />
-    </div>
-    <div class="button-container">
-      <button
-        class="btn btn-primary"
-        type="submit"
-        [disabled]="!newFlavorForm.valid"
-      >
-        Save Flavor
-      </button>
-    </div>
-  </form>
-</div>
+<h1 class="flavor-form__title">Add a New Flavor</h1>
+<form class="flavor-form" [formGroup]="newFlavorForm" (ngSubmit)="onSubmit()">
+  <div class="form-field">
+    <label class="form-field__label" for="name">Name:</label>
+    <input
+      class="form-field__input"
+      id="name"
+      type="text"
+      formControlName="flavorName"
+    />
+  </div>
+  <div class="form-field">
+    <label class="form-field__label" for="description">Description:</label>
+    <textarea
+      class="form-field__textarea"
+      id="description"
+      type="text"
+      formControlName="flavorDescription"
+    ></textarea>
+  </div>
+  <div class="form-field">
+    <label class="form-field__label" for="photo">Photo URL:</label>
+    <input
+      class="form-field__input"
+      id="photo"
+      type="text"
+      formControlName="flavorPhoto"
+    />
+  </div>
+  <div class="form__actions">
+    <button
+      class="btn btn-primary"
+      type="submit"
+      [disabled]="!newFlavorForm.valid"
+    >
+      Save Flavor
+    </button>
+  </div>
+</form>

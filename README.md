@@ -55,3 +55,12 @@ Allows the user to add a new flavor.
   - [ ] Add toast.
   - [ ] Add error messages.
   - [ ] Add favicon.
+- Flavor Component
+  - [ ] Fix redirection when deleting element.
+  - [ ] Add spinner when loading flavor.
+- Flavor list
+  - [ ] Add table to display flavors
+  - [ ] Add spinner when loading flavors.
+- Edit flavor
+  - [ ] Extract form to components scss (same as new-flavor component).
+  - [ ] Display the flavor image?

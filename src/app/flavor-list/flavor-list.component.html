@@ -1,8 +1,11 @@
-<div class="container">
-  <!-- add table  -->
-
+<!-- add table  -->
+<!-- add spinner -->
+<h1 class="flavors-list__title">Available flavors</h1>
+<div class="flavors-list__elements">
   @for (flavor of flavors | async; track flavor.id) {
-    <a [routerLink]="['/flavor', flavor.id]">🍧 {{ flavor.name }}</a>
+    <a class="flavor" [routerLink]="['/flavor', flavor.id]"
+      >🍧 {{ flavor.name }}</a
+    >
   } @empty {
     <h4 class="empty-list-text">No flavors available at the moment.</h4>
   }

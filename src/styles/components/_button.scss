@@ -29,7 +29,13 @@
 }
 
 .btn--danger {
-  background-color: var(--color-error); // TODO: change
+  background-color: var(--status-error);
+  color: var(--status-on-error);
+}
+
+.btn--success {
+  background-color: var(--status-on-success);
+  color: var(--on-success);
 }
 
 .btn--cancel {

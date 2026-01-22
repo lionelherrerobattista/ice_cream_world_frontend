@@ -1,23 +1,19 @@
-<div class="page-container page-container--flex">
-  @if (flavor) {
-    <div class="actions-container">
-      <h1>{{ flavor.name | titlecase }}</h1>
-      <div class="buttons-container">
-        <button class="btn btn-danger" (click)="onDeleteClick()">
-          Delete Flavor
-        </button>
-        <button class="btn btn-primary" (click)="onEditClick()">
-          Edit Flavor
-        </button>
-      </div>
+@if (flavor) {
+  <h1 class="flavor__name">{{ flavor.name | titlecase }}</h1>
+  <div class="flavor__details">
+    <p class="flavor__description">{{ flavor.description }}</p>
+    <div class="flavor__image">
+      <img src="{{ flavor.photo }}" alt="{{ flavor.name }} image" />
     </div>
-    <div class="details-container">
-      <p>{{ flavor.description }}</p>
-      <div class="image-wrapper">
-        <img src="{{ flavor.photo }}" alt="{{ flavor.name }} image" />
-      </div>
-    </div>
-  } @else {
-    <p>Fetching flavor...</p>
-  }
-</div>
+  </div>
+  <div class="flavor__actions">
+    <button class="btn btn--secondary" (click)="onEditClick()">
+      Edit Flavor
+    </button>
+    <button class="btn btn--danger" (click)="onDeleteClick()">
+      Delete Flavor
+    </button>
+  </div>
+} @else {
+  <h2 class="flavor__fetch-text">Fetching flavor...</h2>
+}
