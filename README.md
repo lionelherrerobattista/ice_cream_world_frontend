@@ -59,9 +59,14 @@ Allows the user to add a new flavor.
 - Flavor Component
   - [ ] Fix redirection when deleting element.
   - [ ] Add spinner when loading flavor.
+  - [ ] Add border to image?
 - Flavor list
   - [ ] Add table to display flavors
   - [ ] Add spinner when loading flavors.
+- New Flavor
+  - [ ] Add validation to the form.
 - Edit flavor
+  - [ ] Add validation to the form.
   - [ ] Extract form to components scss (same as new-flavor component).
   - [ ] Display the flavor image?
+  - [ ] Add confirmation before deleting the flavor.
